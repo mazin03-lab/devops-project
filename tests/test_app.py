@@ -15,3 +15,10 @@ def test_health():
 
     assert response.status_code == 200
     assert response.json == {"status": "UP"}
+
+def test_about():
+    client = app.test_client()
+    response = client.get("/about")
+
+    assert response.status_code == 200
+    assert response.data.decode() == "DevOps Mastery Challenge - Flask Application"
