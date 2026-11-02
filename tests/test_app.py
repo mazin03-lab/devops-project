@@ -6,7 +6,7 @@ def test_home():
     response = client.get("/")
 
     assert response.status_code == 200
-    assert response.data.decode() == "Welcome to DevOps Mastery Challenge!"
+    assert response.data.decode() == "Welcome to DevOps Mastery Challenge - Successfully Merged!"
 
 
 def test_health():
