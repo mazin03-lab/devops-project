@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = 'mazin03-lab/devops-app:1.0'
+        IMAGE_NAME = 'mazcargo03/devops-app:1.0'
     }
 
     stages {
